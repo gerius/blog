@@ -16,8 +16,8 @@ $ cd blog
 Create a virtual environment to install dependencies in and activate it:
 
 ```sh
-$ virtualenv2 --no-site-packages env
-$ source env/bin/activate
+$ pip install pipenv
+$ pipenv shell
 ```
 
 Then install the dependencies:
@@ -26,7 +26,7 @@ Then install the dependencies:
 (env)$ pip install -r requirements.txt
 ```
 Note the `(env)` in front of the prompt. This indicates that this terminal
-session operates in a virtual environment set up by `virtualenv2`.
+session operates in a virtual environment set up by `pipenv`.
 
 Once `pip` has finished downloading the dependencies:
 ```sh
@@ -36,4 +36,5 @@ Once `pip` has finished downloading the dependencies:
 And navigate to `http://127.0.0.1:8000/home/`.
 
 
+**thank!!!**
 
