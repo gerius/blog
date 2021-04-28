@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['infinite-bastion-57794.herokuapp.com', '127.0.0.1']
 
 
 # Activate Django-Heroku.
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 
 # Application definition
