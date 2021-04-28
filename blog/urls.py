@@ -1,4 +1,6 @@
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.urls import path
+from django.views.generic import RedirectView
 
 from . import views
 from .views import BlogListView, BlogDetailView, BlogCreateView, BlogUpdateView, BlogDeleteView, CommentCreateView
@@ -8,6 +10,7 @@ urlpatterns = [
     # path('login/', views.login, name='login'),
     # path('logout/', views.logout, name='logout'),
 
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.png'))),
     path("password_reset", views.password_reset_request, name="password_reset"),
     path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
     path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
