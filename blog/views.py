@@ -11,12 +11,9 @@ from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
-from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm, PasswordResetForm
 from .forms import CustomUserCreationForm
-# from django_project import helpers
-from django.contrib import auth
 
 
 # Create your views here.
@@ -53,12 +50,6 @@ class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
-
-
-# class RegisterCreateView(CreateView):
-#     model = Register
-#     template_name = 'register.html'
-#     fields = ['first_name', 'last_name', 'email', 'password']
 
 
 def register(request):
