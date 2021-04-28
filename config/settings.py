@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.SECRET_KEY
+SECRET_KEY = 'django-insecure-vf9(6$3t^+7mtv2kp3_q$)biw^)onqxv%cd(8_3!ggj0vw3ln1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.DEBUG
+DEBUG = True
 
 ALLOWED_HOSTS = ['infinite-bastion-57794.herokuapp.com', '127.0.0.1']
 
