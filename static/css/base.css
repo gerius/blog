@@ -4,10 +4,6 @@ body{
 }
 
 
-.asteriskField {
-      display: none;
-    }
-
     form .alert ul li {
       list-style: none;
     }
@@ -16,14 +12,6 @@ body{
       padding: 0;
       margin: 0;
     }
-
-
-
-
-
-
-
-
 
 .post-entry h2 a ,
 .post-entry h2 a:visited {
